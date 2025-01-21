@@ -6,7 +6,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: testexample
+      - name: checkout repo
+        uses: actions/checkout@v4
+      - name: second step
         run: |
           echo 'Hello world'
           mkdir testdir
