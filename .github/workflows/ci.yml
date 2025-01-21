@@ -6,8 +6,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: test example
-      - run: |
-          echo "Hello world"
+      - name: testexample
+        run: |
+          echo 'Hello world'
           mkdir testdir
-          ls -als
+          ls -la
