@@ -1,7 +1,13 @@
+name: CIExample
+
 on: push
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello world"
+      - name: test example
+      - run: |
+          echo "Hello world"
+          mkdir testdir
+          ls -als
